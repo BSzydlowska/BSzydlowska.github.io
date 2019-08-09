@@ -3,16 +3,21 @@
 
 <head>
 	<title>Thymeleaf Demo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- reference CSS file -->
-	<link rel="stylesheet"
-		  th:href="@{/css/demo.css}" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
 	
+	<!-- Latest compiled and minified JavaScript -->
+	<script	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"	type="text/javascript"></script>
+	<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"	type="text/javascript"></script>
+	<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"	type="text/javascript"></script>
+
 </head>
 
 <body>
 
-	<p th:text="'Time on the server is ' + ${theDate}" class="funny" />
+	<div class="well">Time on the server is + ${theDate}</div>
 
 </body>
 
